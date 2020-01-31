@@ -1,0 +1,8 @@
+Table Alias - logically name the table alias with 3 to 5 characters
+
+Select td.name
+,td.weight
+from total_data as td
+
+######################
+The spaces are not recognized in the SQL or ETL manager, if we want spaces in the column names, use "Holy Hell" instead of Holy_Hell column name
