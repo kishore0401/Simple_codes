@@ -6,3 +6,48 @@ from total_data as td
 
 ######################
 The spaces are not recognized in the SQL or ETL manager, if we want spaces in the column names, use "Holy Hell" instead of Holy_Hell column name
+
+DISTINCT statement have to be added in the beginning, after the SELECT statement to list out all the DISTINCT entries
+
+#Comparision operators
+
+= , !=, >=, <=, IN () operator includes all the values
+
+BETWEEN   AND  
+
+Like operator 
+
+Some column entries will have null values. In order to ignore it, use IS NOT NULL function
+
+NVL function replaces the null value with the value you provide
+
+NVL(TT, 0) 
+
+##########################
+
+AGGREGATE Functions - 
+
+Column PARTITION by functions.
+The partition function is a filter criteria for a column in a table that will reduce the Query run time and more efficient way of writing 
+
+COUNT, MAX, MIN, SUM, AVG
+
+COUNT(DISTINCT DS.TABLENAME)
+
+
+GROUP BY clause is used when there is an aggregate function used and all the non aggregate columns have to go in there
+
+So use the having clause in order to specify the aggregated column to have a definite value
+
+##########################
+
+JOIN CASES
+
+INNER Join - This join function uses the rows which are matching the criteria frm 2 or more tables
+
+OUTER Join - It gets either all the data from one or more tables
+Left join - Gets all the info from left table and selected information from the right table
+
+Right Join - all from right table and matching columns from the left
+
+Full Join - It grabs the all the rows from the 2 or more table
