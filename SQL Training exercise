@@ -15,6 +15,9 @@ DISTINCT statement have to be added in the beginning, after the SELECT statement
 
 BETWEEN   AND  
 
+NOTE : OR operator**** - this is a risky operator which can make your other where conditions go away
+So always use OR operator conditions inside ()
+
 Like operator 
 
 Some column entries will have null values. In order to ignore it, use IS NOT NULL function
@@ -40,6 +43,10 @@ GROUP BY clause is used when there is an aggregate function used and all the non
 So use the having clause in order to specify the aggregated column to have a definite value
 
 ##########################
+
+SYSDATE ---- always use Trunc(sysdate) - which gives you only the date formatting 
+
+
 
 JOIN CASES
 
